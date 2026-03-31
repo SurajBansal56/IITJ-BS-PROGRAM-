@@ -1,14 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>IITJ BS AI Chatbot</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Jodhpur BS AI Chatbot</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #00c6ff;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
 <body>
 
-<h1>IIT Jodhpur BS AI Program Chatbot</h1>
+    <header>
+        <h1>IIT Jodhpur BS AI Program</h1>
+        <p>Interactive AI Chatbot Portal</p>
+    </header>
 
-<script src="https://app.wotnot.io/chat-widget/3TEoue6Kckfx11385668879772nPYzpf.js" defer></script>
+    <main>
+        <div class="card">
+            <h2>Welcome 👋</h2>
+            <p>
+                This chatbot helps you explore the IIT Jodhpur BS AI Program —
+                including curriculum, admission process, career scope, and more.
+            </p>
+
+            <button class="btn" onclick="scrollToBottom()">Start Chat</button>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 IIT Jodhpur AI Chatbot | Built for students
+    </footer>
+
+    <!-- WotNot Chatbot Script -->
+    <script src="https://app.wotnot.io/chat-widget/3TEoue6Kckfx11385668879772nPYzpf.js" defer></script>
+
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
